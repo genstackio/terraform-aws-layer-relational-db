@@ -1,6 +1,6 @@
 module "db" {
   source                     = "genstackio/rds-cluster/aws"
-  version                    = "0.4.0"
+  version                    = "0.4.2"
   env                        = var.env
   name                       = var.name
   db_name                    = null == var.db_name ? "${var.env}_${var.name}" : var.db_name
