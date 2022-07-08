@@ -20,6 +20,10 @@ variable "engine_mode" {
   type    = string
   default = null
 }
+variable "serverless_version" {
+  type = string
+  default = null
+}
 variable "preferred_backup_window" {
   type    = string
   default = null

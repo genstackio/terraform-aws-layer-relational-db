@@ -1,12 +1,13 @@
 module "db" {
   source                     = "genstackio/rds-cluster/aws"
-  version                    = "0.2.0"
+  version                    = "0.3.0"
   env                        = var.env
   name                       = var.name
   db_name                    = null == var.db_name ? "${var.env}_${var.name}" : var.db_name
   db_engine                  = var.engine
   db_engine_version          = var.engine_version
   db_engine_mode             = var.engine_mode
+  db_serverless_version      = var.serverless_version
   db_preferred_backup_window = var.preferred_backup_window
   db_master_username         = var.master_username
   db_master_password         = var.master_password
