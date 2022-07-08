@@ -1,6 +1,6 @@
 module "db" {
   source                     = "genstackio/rds-cluster/aws"
-  version                    = "0.4.2"
+  version                    = "0.4.3"
   env                        = var.env
   name                       = var.name
   db_name                    = null == var.db_name ? "${var.env}_${var.name}" : var.db_name
@@ -20,4 +20,7 @@ module "db" {
   db_min_capacity            = var.min_capacity
   db_security_group_id       = var.security_group_id
   db_backup_retention_period = var.backup_retention_period
+  db_preferred_maintenance_window = var.preferred_maintenance_window
+  db_instance_class          = var.instance_class
+  db_apply_immediately       = var.apply_immediately
 }

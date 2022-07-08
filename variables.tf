@@ -71,3 +71,15 @@ variable "security_group_id" {
   type    = string
   default = null
 }
+variable "preferred_maintenance_window" {
+  type    = string
+  default = null
+}
+variable "instance_class" {
+  type    = string
+  default = null
+}
+variable "apply_immediately" {
+  type    = bool
+  default = true
+}
