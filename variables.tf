@@ -83,3 +83,7 @@ variable "apply_immediately" {
   type    = bool
   default = true
 }
+variable "ca_cert_identifier" {
+  type    = string
+  default = null
+}
