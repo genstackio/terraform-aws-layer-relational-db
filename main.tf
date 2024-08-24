@@ -23,5 +23,5 @@ module "db" {
   db_preferred_maintenance_window = var.preferred_maintenance_window
   db_instance_class          = var.instance_class
   db_apply_immediately       = var.apply_immediately
-  db_ca_cert_identifier      = var_ca_cert_identifier
+  db_ca_cert_identifier      = var.ca_cert_identifier
 }
